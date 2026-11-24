@@ -1,0 +1,1 @@
+{% extends 'base.html' %}{% block content %}<section class="formwrap"><small>FOLIOCRAFT WORKSPACE</small><h1>{{heading|default:"Continue"}}</h1><form method="post" enctype="multipart/form-data" class="panel">{% csrf_token %}{{form.as_p}}<button class="btn">Save and continue ↗</button></form></section>{% endblock %}
